@@ -26,6 +26,6 @@ up()
 for x in range(-5, 20):
     for y in range(-20,5):
          goto(x*m,y*m)
-         dot(3,'green')
+         dot(3,'purple')
 update()
 done()
