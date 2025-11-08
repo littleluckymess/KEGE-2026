@@ -2,6 +2,7 @@ from turtle import*
 screensize(3000,3000)
 tracer(False)
 m=5
+lt(90)
 for i in range(3):
     fd(7*m)
     rt(90)
