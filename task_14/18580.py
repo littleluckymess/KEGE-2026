@@ -1,4 +1,5 @@
 from string import printable as p
+
 for x in p[:25]:
     num1 = int(f'A4{x}7F2',25)
     num2 = int(f'N{x}G5{x}H',25)

@@ -1,4 +1,5 @@
 from string import printable as p
+
 def convert(num,sys):
     res = ''
     while num != 0:

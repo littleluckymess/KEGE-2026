@@ -1,5 +1,6 @@
 ans = set()
 cnt = 0
+
 for x in (10,67):
     for y in range(x):
         num1 = 7*67**4 + 3*67**3 + x*67**2 + 1*67**1 + y*67**0
