@@ -1,3 +1,4 @@
+
 from itertools import product
 alph = sorted('ФОКУС')
 for pos, val in enumerate(product(alph,repeat=5), start = 1):

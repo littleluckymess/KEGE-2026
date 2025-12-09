@@ -1,3 +1,4 @@
+
 cnt = 0
 for val in product('НИЧЬЯ', repeat=7):
     val = ''.join(val)

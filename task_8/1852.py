@@ -1,3 +1,4 @@
+
 from itertools import product
 cnt = 0
 for val in product('ГЕПАРД', repeat=5):

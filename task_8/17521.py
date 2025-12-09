@@ -1,6 +1,5 @@
 from itertools import product
 from string import printable as p
-
 cnt = 0
 for val in product(p[:8],repeat=5):
     val =''.join(val)

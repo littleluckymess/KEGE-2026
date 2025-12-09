@@ -1,3 +1,4 @@
+
 from itertools import product
 from string import printable as p
 cnt = 0

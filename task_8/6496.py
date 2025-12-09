@@ -1,3 +1,4 @@
+
 from itertools import product
 alph = ('БЕРСК')
 cnt = 0
