@@ -1,4 +1,3 @@
-
 from itertools import product
 alph = sorted('СОЛНЦЕ')
 cnt = 0
