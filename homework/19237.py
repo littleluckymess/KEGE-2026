@@ -1,4 +1,3 @@
-
 def convert (num,sys):
     res = ''
     while num != 0:
