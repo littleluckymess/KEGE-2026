@@ -1,3 +1,4 @@
+
 ans = []
 for N in range(151,100_100):
     R = hex(N)[2:]

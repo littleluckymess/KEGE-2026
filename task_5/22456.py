@@ -1,4 +1,3 @@
-from uuid import NAMESPACE_X500
 
 for N in range (1, 100_000):
     R = bin (N) [2:]

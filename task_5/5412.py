@@ -1,3 +1,4 @@
+
 k = 0
 for N in range(1,100_100):
     R = hex(N)[:2]

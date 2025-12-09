@@ -1,3 +1,4 @@
+
 ans=[]
 for N in range(1,100000):
     R=bin(N)[2:]
