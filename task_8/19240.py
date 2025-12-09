@@ -1,4 +1,3 @@
-
 from itertools import product
 alph = sorted('ЯНВАРЬ')
 cnt = 0
