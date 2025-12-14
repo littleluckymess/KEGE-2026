@@ -22,8 +22,8 @@ for i in range(4):
     fd(77*m)
     rt(90)
 up()
-for x in range(-80, 10):
-    for y in range(-15,80):
+for x in range(-80, 15):
+    for y in range(-80,8):
          goto (x*m,y*m)
          dot(3, 'green')
 update()
