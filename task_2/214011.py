@@ -1,3 +1,4 @@
+
 print('x y w x')
 for x in 0,1:
     for y in 0,1:
