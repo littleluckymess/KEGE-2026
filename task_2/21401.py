@@ -1,4 +1,3 @@
-
 from itertools import product, permutations
 def f (x,y,w,z):
     return x and (z <= w) and not y
