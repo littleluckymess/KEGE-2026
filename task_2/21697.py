@@ -7,8 +7,3 @@
 #                 if not f:
 #                     print(x, y, w, z)
 
-from itertools import product, permutations
-def f(x,y,w,z):
-    return not(x <= y) or (z == w) or z
-for i in product((0,1), repeat=6):
-
