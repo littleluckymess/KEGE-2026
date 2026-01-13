@@ -14,8 +14,7 @@ for N in range(1, 100_000):
         R = R.replace('*', '1')
         R = '21' + R
     else:
-        R = R[0] + '1'
-        R = R + '36'
+        R = '1' + R[1:] + '36'
     R = int(R,7)
     if R < 744:
         ans.append([R,N])
