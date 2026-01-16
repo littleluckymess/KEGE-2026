@@ -1,3 +1,4 @@
+
 def DEL(n,m):
     return n % m == 0
 def f(x):
