@@ -1,3 +1,4 @@
+
 def f(x, y):
     return (2*x + y != 70) or (x < y) or (A < x)
 
