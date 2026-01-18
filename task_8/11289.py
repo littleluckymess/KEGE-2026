@@ -1,6 +1,5 @@
 from itertools import permutations
 from string import printable as alph
-
 cnt=0
 for val in permutations((alph[:9]), r=7):
     val = ''.join(val)
