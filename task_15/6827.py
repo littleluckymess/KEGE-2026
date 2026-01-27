@@ -5,7 +5,7 @@ def f(x):
     Q = 5 <= x <= 100
     R = 99 <= x <= 258
     A = A1 <= x <= A2
-    return (A <= R) and (((not(A)) <= P) <= Q)
+    return (A <= R) and (((not A) <= P) <= Q)
 line = [x + eps for x in range(5, 1001) for eps in (0,0.1,0.9)]
 
 ans = []
