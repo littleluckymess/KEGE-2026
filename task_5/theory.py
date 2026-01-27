@@ -21,10 +21,10 @@ print(f'{N:x}')
 # перевод в любую систему (2<= sys <=9)
 def convert(num,sys):
     res = ''
-    while num !=0:
+    while num:
         res += str(num % sys)
         num //= sys
-    return res[::-1]
+    return res[::-1] if res else '0'
 
 
 
