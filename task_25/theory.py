@@ -34,3 +34,13 @@ for l in range(0, 4):
 
 for i in sorted(ans):
     print(*i)
+
+
+#Проверка чисел на простоту
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num **.5)+1):
+        if num % i == 0:
+            return False
+    return True
