@@ -36,11 +36,78 @@ for i in sorted(ans):
     print(*i)
 
 
-#Проверка чисел на простоту
+##############################################################
+
+# Задачи с делителями
+def f(num):
+    d = set()
+    # Перебор делителей числа
+    for i in range(2, int(num ** .5) + 1):
+        if num % i == 0:
+            # | - объединение множеств
+            d |= {i, num // i}
+
+
+# Проверка чисел на простоту
 def is_prime(num):
-    if num < 2:
-        return False
-    for i in range(2, int(num **.5)+1):
+    if num < 2: return False
+    for i in range(2, int(num ** .5) + 1):
         if num % i == 0:
             return False
     return True
+
+
+print(is_prime(1))
+
+
+# Разложение числа на простые множители (медленный способ)
+def fact_1(num):
+    d = []
+
+    for i in range(2, int(num ** .5) + 1):
+        while num % i == 0:
+            d += [i]
+            num //= i
+
+    if num > 2:
+        d += [num]
+
+    return d
+
+
+# Разложение числа на простые множители (менее медленный способ)
+def fact_2(num):
+    d = []
+    while num % 2 == 0:
+        d += [2]
+        num //= 2
+
+    for i in range(3, int(num ** .5) + 1, 2):
+        while num % i == 0:
+            d += [i]
+            num //= i
+
+    if num > 2:
+        d += [num]
+
+    return d
+
+
+# Разложение числа на простые множители (быстрый способ)
+def fact_3(num):
+    d = []
+    while num % 2 == 0:
+        d += [2]
+        num //= 2
+
+    i = 3
+    while i * i < num:
+        while num % i == 0:
+            d += [i]
+            num //= i
+        i += 2
+
+    if num > 2:
+        d += [num]
+
+    return d
