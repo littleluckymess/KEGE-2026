@@ -101,13 +101,12 @@ def fact_3(num):
         num //= 2
 
     i = 3
-    while i * i < num:
+    while i * i <= num:
         while num % i == 0:
             d += [i]
             num //= i
         i += 2
 
-    if num > 2:
+    if num > 1:
         d += [num]
-
     return d
