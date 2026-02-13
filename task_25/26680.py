@@ -13,7 +13,7 @@ def fact(num):
         num //= 2
 
     i = 3
-    while i*i < num:
+    while i*i <= num:
         while num % i == 0:
             d += [i]
             num //= i
