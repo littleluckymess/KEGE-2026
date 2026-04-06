@@ -1,3 +1,4 @@
+
 from itertools import permutations
 
 graph = 'AG GF FE ED DA AB GB BC CD'.split()
