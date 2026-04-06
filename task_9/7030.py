@@ -1,3 +1,4 @@
+
 with open(r'./files/9_7030.txt') as file:
     data =[list(map(int, i.split())) for i in file]
 
