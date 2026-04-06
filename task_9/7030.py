@@ -5,6 +5,9 @@ cnt = 0
 for line in data:
     amount = [line.count(i) for i in set(line)]
     if sorted(amount) == [2, 2, 2]:
-        cnt += 1
+        sides = sorted(set(line))
+        a, b, c = sides
+        if a ** 2 + b ** 2 == c ** 2:
+            cnt += 1
+    print(cnt)
 
-print(cnt)
