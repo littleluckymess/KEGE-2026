@@ -1,3 +1,4 @@
+
 f = [0] * 3010
 for n in range(3001):
     if n == 1: f[n] = 1

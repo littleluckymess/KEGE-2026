@@ -1,3 +1,4 @@
+
 from math import log2, ceil
 L = 60
 N = 10 +250

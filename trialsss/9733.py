@@ -1,3 +1,4 @@
+
 from itertools import product, permutations
 
 def f(x,y,w,z):
