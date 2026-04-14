@@ -1,12 +1,22 @@
-f = [0] * 5000
-g = [0] * 303_900
 
-for n in range(304_000, 0, -1):
-    if n > 303_728: g[n] = n - 15
-    else: g[n] = g[n + 8]/2 - 109
+from functools import lru_cache
 
-for n in range(5000):
-    if n >= 128: f[n] = f[n-5] + 1092
-    else: f[n] = 5 * g[n - 7] + 29
+@lru_cache(None)
+def g(n):
+    if n > 303_728:
+        return n - 15
+    return (g(n + 8)/2) - 109
 
-print(f[2049])
+@lru_cache(None)
+def f(n):
+    if n >= 128:
+        return f(n - 5) + 1092
+    return 5 * g(n - 7) + 29
+
+
+for i in range(304_000, 0, -1):
+    g(i)
+
+for i in range(128, 2000):
+    f(i)
+print(f(2049))
