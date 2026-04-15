@@ -1,15 +1,16 @@
-from itertools import permutations
+from itertools import product
 from string import printable as p
 
 cnt = 0
 
-for val in permutations(p[:7], r=7):
+for val in product(p[:7], repeat=7):
     val = ''.join(val)
-    if '0' not in val[0]:
-        if val[0] != '35' and val[0] != '53':
-            if '22' and '44' not in val:
-                cnt += 1
-    print(cnt, val)
+    if val[0]  not in '035':
+        u1 = '22' in val
+        u2 = '44' in val
+        if u1 + u2 < 2:
+            cnt += 1
+print(cnt)
 
 
 
