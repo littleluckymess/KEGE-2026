@@ -8,7 +8,7 @@ def edge(cluster):
     return max(res)[1]
 
 with open (r'./files/27A_27590.txt') as file:
-    dots = [list(map(float, i.replace(',', ',').split())) for i in file]
+    dots = [list(map(float, i.replace(',', '.').split())) for i in file]
 
 eps = 1
 clusters = []
