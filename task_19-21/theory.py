@@ -141,7 +141,7 @@ print('21)', [s for s in range(1,32) if f(s, 2, 4) and not f(s, 2, 2)])
 def f_19(x, y, s):
    if x + y >= 123: return s % 2 == 0
    if s == 0: return False
-   h = [f_19(x+1, y, s-1), f_19(x*2, y, s-1), \
+   h = [f_19(x+1, y, s-1), f_19(x*2, y, s-1),
          f_19(x, y+1, s-1), f_19(x, y*2, s-1)]
    return any(h)
 def f(x, y, s):
