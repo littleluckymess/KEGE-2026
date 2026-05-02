@@ -1,0 +1,17 @@
+from itertools import combinations
+
+def f(x):
+    B = 22 <= x <= 40
+    C = 32 <= x <= 50
+    A = A1 <= x <= A2
+    return (not A) <= (B == C)
+
+line_A = [22, 32, 40, 50]
+line_x = [23, 33, 41, 51]
+
+
+ans = []
+for A1, A2 in combinations(line_A, 2):
+    if all(f(x) for x in line_x):
+        ans.append(A2 - A1)
+print(min(ans))
