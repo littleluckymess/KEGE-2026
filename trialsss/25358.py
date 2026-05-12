@@ -4,7 +4,7 @@ def f(x, s):
     h = [
         f(x + 2, s - 1),
         f(x + 4, s - 1),
-        f(x * 2, s -1)
+        f(x * 2, s - 1)
     ]
     return any(h) if (s - 1) % 2 == 0 else all(h)
 print('19)', [x for x in range(1, 126) if f(x, 2)])
