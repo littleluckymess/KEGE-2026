@@ -9,7 +9,6 @@ for i in range(len(data) - 1):
     else:
         ans += [cnt]
         cnt = 1
-
 print(max(ans))
 
 cnt = 1
